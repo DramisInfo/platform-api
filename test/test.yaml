@@ -1,7 +1,7 @@
 apiVersion: tf.upbound.io/v1beta1
 kind: Workspace
 metadata:
-  name: sample-remove
+  name: sample-remote
 spec:
   forProvider:
     module: app.terraform.io/dramisinfo/vnet/azurerm
