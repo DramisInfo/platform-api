@@ -4,8 +4,11 @@ metadata:
   name: sample-remote
 spec:
   forProvider:
-    module: https://app.terraform.io/dramisinfo/vnet/azurerm
-    source: Remote
+    module: |
+      resource "random_id" "example_id" {
+          byte_length = 4
+      }
+    source: Inline
   providerConfigRef:
     name: platform-api
     namespace: crossplane-system
