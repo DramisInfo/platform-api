@@ -6,3 +6,6 @@ spec:
   forProvider:
     module: app.terraform.io/dramisinfo/vnet/azurerm
     source: Remote
+  providerConfigRef:
+    name: platform-api
+    namespace: crossplane-system
