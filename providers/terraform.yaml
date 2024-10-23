@@ -25,7 +25,7 @@ spec:
         organization = "dramisinfo" 
 
         workspaces { 
-          project = "platform-api"
+          mane = "test"
         } 
       } 
     }
