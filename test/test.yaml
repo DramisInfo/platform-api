@@ -5,4 +5,4 @@ metadata:
 spec:
   forProvider:
     module: app.terraform.io/dramisinfo/vnet/azurerm
-    source: remote
+    source: Remote
