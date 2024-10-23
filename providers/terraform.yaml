@@ -16,7 +16,7 @@ spec:
     - filename: .terraformrc # use exactly this filename by convention
       source: Secret
       secretRef:
-        namespace: upbound-system
+        namespace: crossplane-system
         name: terraformrc
         key: .terraformrc
   configuration: |
