@@ -1,14 +1,14 @@
-apiVersion: tf.upbound.io/v1beta1
-kind: Workspace
-metadata:
-  name: sample-remote
-spec:
-  forProvider:
-    module: |
-      resource "random_id" "example_id" {
-          byte_length = 4
-      }
-    source: Inline
-  providerConfigRef:
-    name: platform-api
-    namespace: crossplane-system
+# apiVersion: tf.upbound.io/v1beta1
+# kind: Workspace
+# metadata:
+#   name: sample-remote
+# spec:
+#   forProvider:
+#     module: |
+#       resource "random_id" "example_id" {
+#           byte_length = 4
+#       }
+#     source: Inline
+#   providerConfigRef:
+#     name: platform-api
+#     namespace: crossplane-system
