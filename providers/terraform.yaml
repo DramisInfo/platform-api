@@ -1,11 +1,11 @@
-# apiVersion: pkg.crossplane.io/v1
-# kind: Provider
-# metadata:
-#   name: provider-terraform
-#   namespace: crossplane-system
-# spec:
-#   package: xpkg.upbound.io/upbound/provider-terraform:v0.18.0
-# ---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-terraform
+  namespace: crossplane-system
+spec:
+  package: xpkg.upbound.io/upbound/provider-terraform:v0.18.0
+---
 # apiVersion: tf.upbound.io/v1beta1
 # kind: ProviderConfig
 # metadata:
