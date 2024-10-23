@@ -4,7 +4,7 @@ metadata:
   name: sample-remote
 spec:
   forProvider:
-    module: app.terraform.io/dramisinfo/vnet/azurerm
+    module: https://app.terraform.io/dramisinfo/vnet/azurerm
     source: Remote
   providerConfigRef:
     name: platform-api
