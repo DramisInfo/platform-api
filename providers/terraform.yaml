@@ -6,26 +6,26 @@ metadata:
 spec:
   package: xpkg.upbound.io/upbound/provider-terraform:v0.18.0
 ---
-# apiVersion: tf.upbound.io/v1beta1
-# kind: ProviderConfig
-# metadata:
-#   name: platform-api
-#   namespace: crossplane-system
-# spec:
-#   credentials:
-#     - filename: .terraformrc # use exactly this filename by convention
-#       source: Secret
-#       secretRef:
-#         namespace: crossplane-system
-#         name: terraformrc
-#         key: .terraformrc
-#   configuration: |
-#     terraform {
-#       cloud {
-#         organization = "dramisinfo"
+apiVersion: tf.upbound.io/v1beta1
+kind: ProviderConfig
+metadata:
+  name: platform-api
+  namespace: crossplane-system
+spec:
+  credentials:
+    - filename: .terraformrc # use exactly this filename by convention
+      source: Secret
+      secretRef:
+        namespace: crossplane-system
+        name: terraformrc
+        key: .terraformrc
+  configuration: |
+    terraform {
+      cloud {
+        organization = "dramisinfo"
 
-#         workspaces {
-#           mane = "test"
-#         }
-#       }
-#     }
+        workspaces {
+          mane = "test"
+        }
+      }
+    }
